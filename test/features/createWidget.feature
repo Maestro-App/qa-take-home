@@ -6,6 +6,7 @@ Feature: Create new wdiget
     
     Scenario: An logged user create a new widget
     When  the user picks the enterprise
+    //TODO: this steps are missing to implement due the deadline
     --Then  the page will show the dashboard for the enterprise
     --When  the user clicks on add new widget 
     --Then  the page will show a pop up for create the new widget 
