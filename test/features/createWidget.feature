@@ -2,8 +2,6 @@ Feature: Create new wdiget
 
     Background: The user is logged
         Given  I am on the login page
-
-    
     Scenario: An logged user create a new widget
     When  the user picks the enterprise
     //TODO: this steps are missing to implement due the deadline
