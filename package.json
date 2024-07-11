@@ -15,5 +15,6 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts",
     "allure": "allure generate --clean allure-results && allure open"
+
   }
 }
