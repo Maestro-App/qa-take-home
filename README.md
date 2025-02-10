@@ -10,7 +10,7 @@
 
 At it’s core, Maestro is a project-management web application built using Ruby-on-Rails to support the backend service, and a ReactJS frontend application.
 
-You are tasked with creating a minimal e2e testing solution for the web application at <https://public.dev-go-maestro.com>.
+You are tasked with creating a minimal e2e testing solution for the web application at <https://public.test-go-maestro.com>.
 The testing solution should attempt to test basic CRUD functionality for Objectives of a Company (`https://public.dev-go-maestro.com/#{company_id}/objectives`) in the UI.
 
 ## Instructions
