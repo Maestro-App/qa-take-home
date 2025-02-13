@@ -1,0 +1,85 @@
+Test Case: Create Objective
+Preconditions:
+- User is logged in
+- User has access to objectives page
+- User has permissions to create objectives
+
+Steps:
+1. Click "Add" button
+2. Verify "Add Objective" popup appears
+3. Verify "Add Objective" button is disabled
+4. Enter objective name in name field
+5. Verify "Add Objective" button remains disabled
+6. Click start date field
+7. Select start date from calendar
+8. Click end date field 
+9. Select end date from calendar
+10. Verify "Add Objective" button becomes enabled
+11. Click "Add Objective" button
+12. Verify "Objective Access" popup appears
+13. Verify "Open to All" option is visible
+14. Click "Done" button
+15. Verify access popup closes
+16. Verify new objective appears in list
+
+Expected Results:
+- New objective is created successfully
+- Objective appears in objectives list with correct name and dates
+
+Post-conditions:
+- Archive created objective to clean up test data
+
+---
+
+Test Case: Edit Objective Name
+Preconditions:
+- User is logged in
+- User has access to objectives page
+- User has permissions to edit objectives
+- Test objective exists in system
+
+Steps:
+1. Click on objective in list
+2. Verify objective details page opens
+3. Click "More" menu button
+4. Click "Edit Objective" button
+5. Verify "Edit Objective" popup appears
+6. Verify current name is displayed in name field
+7. Enter new name in name field
+8. Verify new name appears in field
+9. Click "Save" button
+10. Verify edit popup closes
+11. Verify objective header shows updated name
+
+Expected Results:
+- Objective name is updated successfully
+- New name is displayed in objective header
+
+Post-conditions:
+- Archive edited objective to clean up test data
+
+---
+
+Test Case: Archive Objective
+Preconditions:
+- User is logged in
+- User has access to objectives page
+- User has permissions to archive objectives
+- Test objective exists in system
+
+Steps:
+1. Click on objective in list
+2. Verify objective details page opens
+3. Click "More" menu button
+4. Click "Archive Objective" button
+5. Verify archive confirmation popup appears
+6. Click "Confirm" button
+7. Verify archive popup closes
+8. Verify objective is no longer visible
+
+Expected Results:
+- Objective is archived successfully
+- Objective is removed from active objectives list
+
+Post-conditions:
+- None (objective is already archived)
