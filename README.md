@@ -1,28 +1,93 @@
-# QA Take Home
+Playwright Tests Project
+This project sets up testing using Playwright with TypeScript or JavaScript. It includes the configuration for running tests, integrating necessary libraries, and various options for running the tests.
 
-- [QA Take Home](#qa-take-home)
-  - [Assignment](#assignment)
-  - [Instructions](#instructions)
-  - [Submission Notes](#submission-notes)
-    - [**To submit your work, please create a fork**](#to-submit-your-work-please-create-a-fork)
+Table of Contents:
+Installation
+Setup
+Running Tests
+Additional Running Options
+Project Structure
+Installation
+To get started with the project, you need to follow a few steps:
 
-## Assignment
+Clone the repository:
 
-At it’s core, Maestro is a project-management web application built using Ruby-on-Rails to support the backend service, and a ReactJS frontend application.
+git clone <URL>
+cd playwright-tests
+Install dependencies:
 
-You are tasked with creating a minimal e2e testing solution for the web application at <https://public.dev-go-maestro.com>.
-The testing solution should attempt to test basic CRUD functionality for Objectives of a Company (`https://public.dev-go-maestro.com/#{company_id}/objectives`) in the UI.
+Use npm or yarn to install all required libraries.
 
-## Instructions
+If you don’t have npm or yarn, install them via Node.js.
 
-Your assignment is to:
+Use one of the following commands to install dependencies:
 
-1. write a test plan for our web application
-2. additionally, write automated e2e tests that execute on the test plan using any tools/frameworks that you prefer.
 
-## Submission Notes
+npm install
+or
 
-We expect this assignment to take between 4 and 6 hours.
-While completeness is always desired, incomplete work produced at a high level may be evaluated more positively than complete work produced at an inadequate level.
+yarn install
+Setup
+Playwright and Dependencies:
 
-### **To submit your work, please create a fork**
+The project uses the following libraries:
+
+Playwright – for browser automation.
+dotenv – for managing .env files.
+Faker – for generating test data.
+Luxon – for handling dates and times.
+To install Playwright and the necessary browsers, run:
+
+npx playwright install
+
+dotenv
+You can provide further details on environment configuration in your team's or project's documentation.
+
+Running Tests
+Running All Tests:
+
+To run all tests with Playwright, use the command:
+
+npx playwright test
+Running Tests with UI:
+
+If you want to use the UI for running tests, you can do it with the following command:
+
+npx playwright test --ui
+
+This will open an interactive UI where you can select and run individual tests.
+
+Running Tests for a Specific Group:
+
+To run a specific group of tests, for example, by category:
+
+npx playwright test --project=firefox
+Running Tests in a Specific Browser:
+
+To run tests in a specific browser (Chrome, Firefox, or WebKit):
+
+npx playwright test --project=firefox
+This will run tests in Firefox.
+
+Additional Running Options
+Running Tests in a Specific Directory:
+
+Project Structure
+tests/ – the main folders for tests.
+tests/tests-for-playwright/ – tests for running.
+package.json – the main file with dependencies and scripts.
+playwright.config.ts – Playwright configuration file.
+README.md – project documentation.
+Versions
+The project uses the following versions:
+
+Node.js: 16.x
+Playwright: 1.20.x
+TypeScript: 4.x
+dotenv: 10.x
+Luxon: 3.x
+Faker: 7.x
+📚 Documentation
+Playwright --- https://playwright.dev/docs/intro
+dotenv --- https://www.npmjs.com/package/dotenv
+Faker --- https://github.com/faker-js/faker
