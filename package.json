@@ -1,0 +1,26 @@
+{
+  "name": "qa-take-home",
+  "version": "1.0.0",
+  "description": "- [QA Take Home](#qa-take-home)\r   - [Assignment](#assignment)\r   - [Instructions](#instructions)\r   - [Submission Notes](#submission-notes)\r     - [**To submit your work, please create a fork**](#to-submit-your-work-please-create-a-fork)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleg1704/qa-take-home.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleg1704/qa-take-home/issues"
+  },
+  "homepage": "https://github.com/Oleg1704/qa-take-home#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "dotenv": "^16.4.7"
+  }
+}
