@@ -1,0 +1,20 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "@utils/*": ["./pw-tests/fixtures/utils/*"],
+        "@fixtures/*": ["./pw-tests/fixtures/*"],
+        "@pages/*": ["./pw-tests/pages/*"],
+        "@api/*": ["./pw-tests/api/*"],
+        "@dataProvider/*": ["./pw-tests/dataProvider/*"],
+        "@helpers/*": ["./pw-tests/helpers/*"],
+        "@types/*": ["./pw-tests/types/*"],
+        "@tests/*": ["./pw-tests/tests/*"]
+      },
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
